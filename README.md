@@ -10,17 +10,19 @@ This application is a entry to Android architecture, coding syntax with Kotlin/J
 and how to incorporate various libraries such as Retrofit and Glide into a project.
 
 ## Application Demo:
-![CampaignMVP Demo](Demos/CampaignApp_demo.gif)
+
+<img src="Demos/CampaignApp_demo.gif" alt="drawing" width="33%"/>
 
 ## Tech/Framework 
 This project is built using:
 
-Application:
+### Application:
 - Retrofit
 - Glide
 - DataBinding
+- Generic RecyclerViewAdapter
 
-Testing:
+### Testing:
 - JUnit
 - Mockito
 - Espresso
@@ -30,8 +32,4 @@ Testing:
 ### Architecture: 
 __Model-View-Presenter (MVP)__
 
-### Networking: 
 
-- Retrofit client:
-
-- Service interface:
