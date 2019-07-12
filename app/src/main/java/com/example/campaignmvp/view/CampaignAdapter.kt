@@ -10,13 +10,12 @@ import com.example.campaignmvp.databinding.HotDealBinding
 import com.example.campaignmvp.network.response.BannerModel
 import com.example.campaignmvp.network.response.DealModel
 
+const val TYPE_DEAL = 1
+const val TYPE_BANNER = 2
+
 class CampaignAdapter(val dataSet: MutableList<Any>) :
     RecyclerView.Adapter<BaseHolder>() {
-
-    private val TYPE_DEAL = 1
-    private val TYPE_BANNER = 2
-
-    // Create new views (invoked by the layout manager)
+    
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
@@ -28,9 +27,10 @@ class CampaignAdapter(val dataSet: MutableList<Any>) :
 
             val bannerBinder = DataBindingUtil.inflate<BannerItemBinding>(
                 inflater,
-                R.layout.banner_item,
+                R.layout.campaign_banner,
                 parent,
-                false)
+                false
+            )
 
             return BannerHolder(bannerBinder)
         }
@@ -38,9 +38,10 @@ class CampaignAdapter(val dataSet: MutableList<Any>) :
 
         val dealBinder = DataBindingUtil.inflate<HotDealBinding>(
             inflater,
-            R.layout.hot_deal,
+            R.layout.campaign_hot_deal,
             parent,
-            false)
+            false
+        )
 
         return DealHolder(dealBinder)
 
