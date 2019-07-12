@@ -3,10 +3,10 @@ package com.example.campaignmvp.view
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter
 import com.bumptech.glide.Glide
-import com.example.campaignmvp.databinding.BannerItemBinding
+import com.example.campaignmvp.databinding.CampaignBannerBinding
 import com.example.campaignmvp.network.response.BannerModel
 
-class BannerHolder(private val binding: BannerItemBinding) : BaseHolder(binding.root) {
+class BannerHolder(private val binding: CampaignBannerBinding) : BaseHolder(binding.root) {
     override fun bindTo(model: Any) {
         if (model is BannerModel) {
             binding.apply {

@@ -5,8 +5,8 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.campaignmvp.R
-import com.example.campaignmvp.databinding.BannerItemBinding
-import com.example.campaignmvp.databinding.HotDealBinding
+import com.example.campaignmvp.databinding.CampaignBannerBinding
+import com.example.campaignmvp.databinding.CampaignHotDealBinding
 import com.example.campaignmvp.network.response.BannerModel
 import com.example.campaignmvp.network.response.DealModel
 
@@ -25,7 +25,7 @@ class CampaignAdapter(val dataSet: MutableList<Any>) :
 
         if (viewType == TYPE_BANNER) {
 
-            val bannerBinder = DataBindingUtil.inflate<BannerItemBinding>(
+            val bannerBinder = DataBindingUtil.inflate<CampaignBannerBinding>(
                 inflater,
                 R.layout.campaign_banner,
                 parent,
@@ -36,7 +36,7 @@ class CampaignAdapter(val dataSet: MutableList<Any>) :
         }
 
 
-        val dealBinder = DataBindingUtil.inflate<HotDealBinding>(
+        val dealBinder = DataBindingUtil.inflate<CampaignHotDealBinding>(
             inflater,
             R.layout.campaign_hot_deal,
             parent,
