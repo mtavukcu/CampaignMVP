@@ -10,7 +10,7 @@ This application is a entry to Android architecture, coding syntax with Kotlin/J
 and how to incorporate various libraries such as Retrofit and Glide into a project.
 
 ## Application Demo:
-
+![CampaignMVP Demo](Demos/CampaignApp_demo.gif)
 
 ## Tech/Framework 
 This project is built using:
