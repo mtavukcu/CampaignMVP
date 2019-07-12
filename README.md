@@ -27,9 +27,7 @@ This project is built using:
 - Mockito
 - Espresso
 
-## Structure
-
-### Architecture: 
+## Architecture: 
 __Model-View-Presenter (MVP)__
 
 
